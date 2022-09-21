@@ -4,6 +4,15 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #d88c0a;
+}
+
 #horiNavBar {
   width: 100%;
   height: 10vh;
@@ -79,9 +88,11 @@
 }
 
 #mainCon {
-  margin-top: 4vh;
-  margin-left: 21vw;
-  margin-right: 3vw;
+  padding-top: 4vh;
+  padding-left: 4vw;
+  background-color: rgb(250, 250, 250);
+  height: 86vh;
+  overflow-y: scroll;
 }
 
 .pageHeader {
@@ -107,18 +118,16 @@
 
 #boardGamesCon {
   width: 100%;
-  height: 100%;
-  overflow-y: scroll;
   padding: 1vh;
   margin-top: 7vh;
 }
 
 .boardGameCard {
   width: 14vw;
-  height: 17vw;
-  border-radius: 1vh;
+  height: 18vw;
+  border-radius: 0.6vw;
   padding: 1vw;
-  float: left;
+  display: inline-block;
   margin: 1vw;
   background: linear-gradient(
     166deg,
@@ -126,6 +135,21 @@
     rgba(249, 180, 64, 1) 75%,
     rgba(255, 162, 0, 1) 100%
   );
+}
+
+.bottomSpace {
+  height: 2vh;
+  width: 100%;
+}
+
+.boardGameCardBottom {
+  width: 16vw;
+  margin-left: -1vw;
+  border-radius: 0.6vw;
+  border-bottom: solid 0.4vh rgb(224, 142, 1);
+  height: 1vw;
+  margin-bottom: -19.2vw;
+  margin-top: 17.8vw;
 }
 
 .boardGameCardText {
@@ -141,6 +165,14 @@
   padding: 0.3vw;
 }
 
+.boardGameCardTitleSmall {
+  align-self: center;
+  margin: auto;
+  text-align: center;
+  font-size: 1.1vw;
+  padding: 0.3vw;
+}
+
 .boardGameCardPlayersImg {
   width: 1.6vw;
   float: left;
@@ -152,6 +184,27 @@
   width: 100%;
   border-radius: 0.5vh;
   height: 10vw;
+}
+
+.boardGameCardButton {
+  width: 80%;
+  height: 4vh;
+  margin: auto;
+  background-color: #9eda59;
+  text-align: center;
+  position: relative;
+  line-height: 4vh;
+  border-radius: 100px;
+  margin-top: 0.8vh;
+}
+
+.gameOwnerText {
+  height: 4vh;
+}
+
+.boardGameCardButton:hover {
+  background-color: #a7dc6b;
+  cursor: pointer;
 }
 
 #front_page_container {

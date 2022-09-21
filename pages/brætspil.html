@@ -4,7 +4,7 @@
   <meta charset="utf-8">
 
   <link rel="stylesheet" href="../styles.css" />
-  <title>VIA Board Game Group</title>
+  <title>Brætspil - VIA Board Game Group</title>
   <link rel="icon" type="image/png" href="../images/icon.png" />
 </head>
 
@@ -47,6 +47,7 @@
         <div class="dropDownMenu">
           <label>Kategorier</label>
           <select name="kategorier">
+            <option value="familiespil">Alle spil</option>
             <option value="familiespil">Familiespil</option>
             <option value="strategispil">Strategispil</option>
             <option value="kortspil">Kortspil</option>
@@ -55,7 +56,7 @@
           <div class="dropDownMenu">
             <label>Antal spillere</label>
             <select name="antal_spillere">
-              <option value="2-4">2 - 4</option>
+              <option value="2-4">1 - 4</option>
               <option value="4-8">4 - 8</option>
               <option value="8-16">8 - 16</option>
               <option value="16+">16+</option>
@@ -63,31 +64,115 @@
           </div>
         </div>
       </div>
+
       <!-- The board games -->
       <div id="boardGamesCon">
+        <!-- New Ludo -->
         <div class="boardGameCard">
-          <img class="boardGameCardImage" src="../images/newLudo.jpg" alt="New
+          <div class="boardGameCardBottom"></div>
+          <img class="boardGameCardImage" src="../images/brætspil/newLudo.jpg"
+            alt="New
             Ludo" />
           <p class="boardGameCardTitle">New Ludo</p>
           <div class="boardGameCardPlayersCon">
             <img class="boardGameCardPlayersImg" src="../images/people.png" />
             <p class="boardGameCardText">2 - 6</p>
           </div>
-          <p class="boardGameCardText">Game owner: Mathias Berg</p>
-          <p class="boardGameCardText">Lånt til Bob Hansen d. 24.7.2022</p>
+          <p class="boardGameCardText gameOwnerText">Game owner: Mathias Berg</p>
+          <p class="boardGameCardText">Lånt til Bob Hansen d. 24.8.2022</p>
         </div>
+
+        <!-- Trivia Pursuit -->
         <div class="boardGameCard">
-          <img class="boardGameCardImage" src="../images/triviaPursuit.jpg" alt="New
-            Ludo" />
-          <p class="boardGameCardTitle">Trivia Pursuit</p>
+          <div class="boardGameCardBottom"></div>
+          <img class="boardGameCardImage"
+            src="../images/brætspil/trivialPursuit.jpg"
+            alt="Trivial Pursuit" />
+          <p class="boardGameCardTitle">Trivial Pursuit</p>
           <div class="boardGameCardPlayersCon">
             <img class="boardGameCardPlayersImg" src="../images/people.png" />
             <p class="boardGameCardText">2 - 6</p>
           </div>
+          <p class="boardGameCardText">Game owner: Karl Klausen</p>
+          <div class="boardGameCardButton">Lån</div>
+        </div>
+
+        <!-- Hive -->
+        <div class="boardGameCard">
+          <div class="boardGameCardBottom"></div>
+          <img class="boardGameCardImage"
+            src="../images/brætspil/hive.png"
+            alt="Hive" />
+          <p class="boardGameCardTitle">Hive</p>
+          <div class="boardGameCardPlayersCon">
+            <img class="boardGameCardPlayersImg" src="../images/people.png" />
+            <p class="boardGameCardText">2</p>
+          </div>
+          <p class="boardGameCardText gameOwnerText">Game owner: David Olsen</p>
+          <p class="boardGameCardText">Lånt til Mia Villumsen d. 06.8.2022</p>
+        </div>
+
+        <!-- Uno -->
+        <div class="boardGameCard">
+          <div class="boardGameCardBottom"></div>
+          <img class="boardGameCardImage"
+            src="../images/brætspil/uno.jpg"
+            alt="Uno" />
+          <p class="boardGameCardTitle">Uno</p>
+          <div class="boardGameCardPlayersCon">
+            <img class="boardGameCardPlayersImg" src="../images/people.png" />
+            <p class="boardGameCardText">2 - 10</p>
+          </div>
+          <p class="boardGameCardText">Game owner: Louise Kelpak</p>
+          <div class="boardGameCardButton">Lån</div>
+        </div>
+
+        <!-- Operation -->
+        <div class="boardGameCard">
+          <div class="boardGameCardBottom"></div>
+          <img class="boardGameCardImage"
+            src="../images/brætspil/operationjpg.jpeg"
+            alt="Operation" />
+          <p class="boardGameCardTitle">Operation</p>
+          <div class="boardGameCardPlayersCon">
+            <img class="boardGameCardPlayersImg" src="../images/people.png" />
+            <p class="boardGameCardText">1 - 4</p>
+          </div>
           <p class="boardGameCardText">Game owner: Mathias Berg</p>
-          <p class="boardGameCardText">Lånt til Bob Hansen d. 24.7.2022</p>
+          <div class="boardGameCardButton">Lån</div>
+        </div>
+
+        <!-- Cards Against Humanity -->
+        <div class="boardGameCard">
+          <div class="boardGameCardBottom"></div>
+          <img class="boardGameCardImage"
+            src="../images/brætspil/cardsAgainstHumanity.jpg"
+            alt="Cards Against Humanity" />
+          <p class="boardGameCardTitleSmall">Cards Against Humanity</p>
+          <div class="boardGameCardPlayersCon">
+            <img class="boardGameCardPlayersImg" src="../images/people.png" />
+            <p class="boardGameCardText">4+</p>
+          </div>
+          <p class="boardGameCardText">Game owner: Eva Ditsen</p>
+          <div class="boardGameCardButton">Lån</div>
+        </div>
+
+        <!-- Go -->
+        <div class="boardGameCard">
+          <div class="boardGameCardBottom"></div>
+          <img class="boardGameCardImage"
+            src="../images/brætspil/go.png"
+            alt="Go" />
+          <p class="boardGameCardTitleSmall">Go</p>
+          <div class="boardGameCardPlayersCon">
+            <img class="boardGameCardPlayersImg" src="../images/people.png" />
+            <p class="boardGameCardText">2</p>
+          </div>
+          <p class="boardGameCardText">Game owner: Vigo Bazi</p>
+          <div class="boardGameCardButton">Lån</div>
         </div>
       </div>
+      <div class="bottomSpace"></div>
     </div>
   </div>
 </body>
