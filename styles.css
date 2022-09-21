@@ -93,25 +93,7 @@
   margin-top: 0.3vh;
 }
 
-.nav_list_main li {
-  list-style: none;
-}
-
-.nav_list_main li a {
-  text-decoration: none;
-  color: black;
-}
-
-.nav_list_sub li {
-  list-style: none;
-}
-
-.nav_list_sub li a {
-  text-decoration: none;
-  font-size: 20 !important;
-}
-
-#font_page_container {
+#front_page_container {
   float: left;
   width: 80vw;
 }
