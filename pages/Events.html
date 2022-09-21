@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <link href="style.css"  rel="stylesheet" />
+    <link href="../styles.css"  rel="stylesheet" />
     <title>Events</title>
     <style>
         td, th {
@@ -21,10 +21,32 @@
 </head>
 
 <body>
-    
-    <div>
-        <div id="horiNavBar"></div>
-        <div id="vertNavBar"></div>
+  <div>
+    <!-- This is the horizontal navigation bar at the top of the page -->
+    <div id="horiNavBar">
+      <img id="horiNavBarLogo" src="./images/icon.png" />
+      <h1 id="horiNavBarTitle">VIA Board Game Group</h1>
+      <div id="horiNavBarSearchCon">
+        <img id="horiNavBarSearchIcon" src="./images/search.png" />
+      </div>
+    </div>
+
+    <!-- This is the vertical navigation bar at the left side of the page -->
+    <div id="vertNavBar">
+      <ul id="vertNavBarList">
+        <li class="vertNavBarHeader">Forside</li>
+        <li class="vertNavBarHeader">
+          Brætspil
+          <ul class="vertNavBarSubList">
+            <li>Familiespil</li>
+            <li>Strategispil</li>
+            <li>Kortspil</li>
+            <li>Triviaspil</li>
+          </ul>
+        </li>
+        <li class="vertNavBarHeader">Events</li>
+        <li class="vertNavBarHeader">Kontakt</li>
+      </ul>
     </div>
     <center><h1>Events</h1></center>
     <table class="center" id="tabel1"> 

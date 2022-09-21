@@ -138,3 +138,16 @@
   margin-right: 100px;
   float: left;
 }
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tabel1{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  right: 10px;
+  left: 50%;
+}
