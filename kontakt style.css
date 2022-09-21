@@ -1,0 +1,44 @@
+body {
+    background-color: white;
+}
+#horiNavBar {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(203, 155, 32);
+   }
+       div{
+        border: 20px;
+        border-image:auto ;
+       }
+   #vertNavBar {
+    float: left;
+    width: 400px;
+    background-color: rgb(87, 190, 173);
+    height: 2000px;
+   }
+   h1{
+    color: black;
+    text-align: center;
+    font-family: Arial;
+  font-size: 40px;
+}
+
+#Persons {
+    border: 2px solid rgb(203, 155, 32);
+    }
+#Oumar{
+    border: 15px solid rgb(203, 155, 32);        }
+#Simone{
+    border: 15px solid rgb(203, 155, 32);
+}       
+#Rune{
+    border: 15px solid rgb(203, 155, 32);
+}
+#Bak{
+    border: 15px solid rgb(203, 155, 32);
+}
+    
+img{
+    float:left
+}
+

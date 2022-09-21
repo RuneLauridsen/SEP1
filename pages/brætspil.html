@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <head>
-  <link rel="stylesheet" href="./styling/styles.css" />
+  <link rel="stylesheet" href="../styles.css" />
   <title>VIA Board Game Group</title>
-  <link rel="icon" type="image/png" href="./images/icon.png" />
+  <link rel="icon" type="image/png" href="../images/icon.png" />
 </head>
 <body>
   <div>
     <!-- This is the horizontal navigation bar at the top of the page -->
-    <div id="horiNavBarCon">
-      <img id="horiNavBarLogo" src="./images/icon.png" />
+    <div id="horiNavBar">
+      <img id="horiNavBarLogo" src="../images/icon.png" />
       <h1 id="horiNavBarTitle">VIA Board Game Group</h1>
       <div id="horiNavBarSearchCon">
-        <img id="horiNavBarSearchIcon" src="./images/search.png" />
+        <img id="horiNavBarSearchIcon" src="../images/search.png" alt="Search
+          Icon"/>
       </div>
     </div>
 
     <!-- This is the vertical navigation bar at the left side of the page -->
-    <div id="vertNavBarCon">
+    <div id="vertNavBar">
       <ul id="vertNavBarList">
         <li class="vertNavBarHeader">Forside</li>
         <li class="vertNavBarHeader">
@@ -32,18 +33,57 @@
         <li class="vertNavBarHeader">Kontakt</li>
       </ul>
     </div>
+    <!-- Main content -->
     <div id="mainCon">
       <h2 class="pageHeader">Brætspil</h2>
-      <div class="smallDivider">
-        <div>
-          <label for="cars">Kategori</label>
-<select name="cars" id="cars">
-  <option value="familiespil">Familiespil</option>
-  <option value="strategispil">Strategispil</option>
-  <option value="kortspil">Kortspil</option>
-  <option value="triviaspil">Triviaspil</option>
-</select>
+      <div class="smallDivider"></div>
+      <!-- Filter options -->
+      <div id="filterCon">
+        <div class="dropDownMenu">
+          <label>Kategorier</label>
+          <select name="kategorier">
+            <option value="familiespil">Familiespil</option>
+            <option value="strategispil">Strategispil</option>
+            <option value="kortspil">Kortspil</option>
+            <option value="triviaspil">Triviaspil</option>
+          </select>
+          <div class="dropDownMenu">
+            <label>Antal spillere</label>
+            <select name="antal_spillere">
+              <option value="2-4">2 - 4</option>
+              <option value="4-8">4 - 8</option>
+              <option value="8-16">8 - 16</option>
+              <option value="16+">16+</option>
+            </select>
+          </div>
         </div>
+      </div>
+      <!-- The board games -->
+      <div id="boardGamesCon">
+        <div class="boardGameCard">
+          <img class="boardGameCardImage" src="../images/newLudo.jpg" alt="New
+            Ludo"/>
+          <p class="boardGameCardTitle">New Ludo</p>
+          <div class="boardGameCardPlayersCon">
+            <img class="boardGameCardPlayersImg" src="../images/people.png"/>
+            <p class="boardGameCardText">2 - 6</p>
+          </div>
+          <p class="boardGameCardText">Game owner: Mathias Berg</p>
+          <p class="boardGameCardText">Lånt til Bob Hansen d. 24.7.2022</p>
+        </div>
+        <div class="boardGameCard">
+          <img class="boardGameCardImage" src="../images/triviaPursuit.jpg"
+            alt="New
+            Ludo"/>
+          <p class="boardGameCardTitle">Trivia Pursuit</p>
+          <div class="boardGameCardPlayersCon">
+            <img class="boardGameCardPlayersImg" src="../images/people.png"/>
+            <p class="boardGameCardText">2 - 6</p>
+          </div>
+          <p class="boardGameCardText">Game owner: Mathias Berg</p>
+          <p class="boardGameCardText">Lånt til Bob Hansen d. 24.7.2022</p>
+        </div>
+      </div>
     </div>
   </div>
 </body>
