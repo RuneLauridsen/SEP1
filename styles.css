@@ -150,4 +150,32 @@
   width: 50%;
   right: 10px;
   left: 50%;
+  margin-bottom: 3vh;
+}
+
+.Event{
+  background-image: url(images/boardgame_pieces.jpeg);
+  background-size: cover;
+  overflow-y: scroll;
+  height: 90vh;
+}
+
+#td{
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+  background-color: lightgoldenrodyellow;
+  border-color: black;
+}
+
+#th{
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+  background-color: lightgoldenrodyellow;
+  border-color: black;
+}
+
+#tr{
+    background-color: lightblue;
 }
