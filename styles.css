@@ -94,8 +94,8 @@
 }
 
 #front_page_container {
-  float: left;
-  width: 80vw;
+  height: 90vh;
+  overflow-y: scroll;
 }
 
 .front_page_section {
@@ -110,7 +110,7 @@
   width: 400px;
 }
 
-/* Skiftevis billede i højre og venstre side */
+/* Alternate between image on left and right side */
 .front_page_section:nth-child(odd) img {
   margin-left: 100px;
   float: right;
