@@ -1,67 +1,140 @@
-body {
-    margin: 0;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #horiNavBar {
-    width: 100%;
-    height: 10vh;
-    background-color: rgb(255, 170, 0);
+  width: 100%;
+  height: 10vh;
+  background-color: #f6a61d;
+}
+
+#horiNavBarLogo {
+  height: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  margin: auto;
+  margin-left: 3vw;
+  float: left;
+}
+
+#horiNavBarTitle {
+  font-size: 2vh;
+  line-height: 10vh;
+  margin-left: 20px;
+  float: left;
+  font-weight: 500;
+}
+
+#horiNavBarSearchCon {
+  width: 16vw;
+  height: 3vh;
+  background-color: white;
+  float: right;
+  border-radius: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  margin-right: 3vw;
+}
+
+#horiNavBarSearchIcon {
+  height: 50%;
+  float: right;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  margin-right: 0.5vw;
 }
 
 #vertNavBar {
-    float: left;
-    width: 18vw;
-    height: 90vh;
-    background-color: rgb(188, 244, 255);
+  float: left;
+  width: 18vw;
+  background-color: #ffe0aa;
+  height: 90vh;
 }
 
+#vertNavBarList {
+  left: 30%;
+  top: 3%;
+  position: relative;
+  font-size: 2vh;
+  list-style-type: none;
+}
+
+.vertNavBarHeader {
+  margin-bottom: 1vh;
+}
+
+.vertNavBarSubList {
+  margin-left: 2vw;
+  list-style-type: circle;
+  font-size: 0.9em;
+  color: rgb(39, 39, 39);
+}
+
+#mainCon {
+  height: 84vh;
+  margin-top: 4vh;
+  margin-left: 21vw;
+}
+
+.pageHeader {
+  font-size: 3vh;
+  font-weight: 500;
+}
+
+.smallDivider {
+  width: 4vw;
+  height: 0.2vh;
+  background-color: rgb(108, 108, 108);
+  margin-top: 0.3vh;
+}
 
 .nav_list_main li {
-    list-style: none;
+  list-style: none;
 }
 
 .nav_list_main li a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .nav_list_sub li {
-    list-style: none;
+  list-style: none;
 }
 
 .nav_list_sub li a {
-    text-decoration: none;
-    font-size: 20 !important;
+  text-decoration: none;
+  font-size: 20 !important;
 }
 
-
-
-
 #font_page_container {
-    float: left;
-    width: 80vw;
+  float: left;
+  width: 80vw;
 }
 
 .front_page_section {
-    margin-bottom: 100px;
-    margin-left: 100px;
-    margin-top: 30px;
-    margin-right: 100px;
-    overflow: auto;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  margin-top: 30px;
+  margin-right: 100px;
+  overflow: auto;
 }
 
 .front_page_section img {
-    width: 400px;
+  width: 400px;
 }
 
 /* Skiftevis billede i højre og venstre side */
 .front_page_section:nth-child(odd) img {
-    margin-left: 100px;
-    float: right;
+  margin-left: 100px;
+  float: right;
 }
 
 .front_page_section:nth-child(even) img {
-    margin-right: 100px;
-    float: left;
+  margin-right: 100px;
+  float: left;
 }
