@@ -265,6 +265,10 @@ a:hover {
   height: 90vh;
 }
 
+.Event h1 {
+  text-align: center;
+}
+
 #td {
   border: 1px solid black;
   text-align: left;
