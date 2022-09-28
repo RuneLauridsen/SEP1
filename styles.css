@@ -108,16 +108,14 @@ a:hover {
 }
 
 #kategoriBeskrivelse {
-  width: 50%;
-  height: 4%;
-  margin-left: 25vw;
-  margin-top: -2%;
-  margin-bottom: 3%;
+  display: inline-block;
   color: #424242;
+  width: 32vw;
 }
 
 #filterCon {
   margin: 2vh;
+  width: 40vw;
 }
 
 .dropDownMenu {
