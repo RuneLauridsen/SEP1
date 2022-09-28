@@ -269,7 +269,8 @@ a:hover {
   text-align: center;
 }
 
-#td {
+td,
+th {
   border: 1px solid black;
   text-align: left;
   padding: 8px;
@@ -277,15 +278,7 @@ a:hover {
   border-color: black;
 }
 
-#th {
-  border: 1px solid black;
-  text-align: left;
-  padding: 8px;
-  background-color: lightgoldenrodyellow;
-  border-color: black;
-}
-
-#tr {
+tr :nth-child(even) {
   background-color: lightblue;
 }
 
