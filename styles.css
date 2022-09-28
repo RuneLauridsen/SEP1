@@ -107,6 +107,15 @@ a:hover {
   margin-top: 0.3vh;
 }
 
+#kategoriBeskrivelse {
+  width: 50%;
+  height: 4%;
+  margin-left: 25vw;
+  margin-top: -2%;
+  margin-bottom: 3%;
+  color: #424242;
+}
+
 #filterCon {
   margin: 2vh;
 }
@@ -118,7 +127,7 @@ a:hover {
 
 #boardGamesCon {
   padding: 1vh;
-  margin-top: 7vh;
+  overflow: auto;
 }
 
 .boardGameCard {
@@ -126,7 +135,7 @@ a:hover {
   height: 18vw;
   border-radius: 0.6vw;
   padding: 1vw;
-  display: inline-block;
+  float: left;
   margin: 1vw;
   background: linear-gradient(
     166deg,
@@ -182,7 +191,8 @@ a:hover {
 .boardGameCardImage {
   width: 100%;
   border-radius: 0.5vh;
-  height: 10vw;
+  max-height: 10vw;
+  min-height: 10vw;
 }
 
 .boardGameCardButton {
@@ -275,6 +285,6 @@ a:hover {
   background-color: lightblue;
 }
 
-#facebook{
+#facebook {
   margin-left: 500px;
 }
