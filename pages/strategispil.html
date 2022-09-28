@@ -42,118 +42,149 @@
 
         <div id="mainCon">
             <h2 class="pageHeader">Strategispil</h2>
-
+            <div class="smallDivider"></div>
+            <!-- Filter options -->
+            <div id="filterCon">
+                <div class="dropDownMenu">
+                    <label>Kategorier</label>
+                    <select name="kategorier">
+                        <option value="allespil">Alle spil</option>
+                        <option value="familiespil">Familiespil</option>
+                        <option value="strategispil" selected="selected">Strategispil</option>
+                        <option value="kortspil">Kortspil</option>
+                        <option value="triviaspil">Triviaspil</option>
+                    </select>
+                    <div class="dropDownMenu">
+                        <label>Antal spillere</label>
+                        <select name="antal_spillere">
+                            <option value="2-4">1 - 4</option>
+                            <option value="4-8">4 - 8</option>
+                            <option value="8-16">8 - 16</option>
+                            <option value="16+">16+</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <p id="kategoriBeskrivelse">Strategispil er hvor hjernen rigtig
+                kommer i brug, og man skal til at lægge en strategi hvis man vil
+                være spillets vinder. Vi tilbyder både de helt klassiske som
+                Skak og Go, men også nyere spil som Hive.</p>
             <div id="boardGamesCon">
+                <div id="boardGamesCon">
 
-                <!-- Go -->
-                <div class="boardGameCard">
-                    <div class="boardGameCardBottom"></div>
-                    <img class="boardGameCardImage"
-                        src="../images/brætspil/go.png" alt="Go" />
-                    <p class="boardGameCardTitleSmall">Go</p>
-                    <div class="boardGameCardPlayersCon">
-                        <img class="boardGameCardPlayersImg"
-                            src="../images/people.png" />
-                        <p class="boardGameCardText">2</p>
+                    <!-- Go -->
+                    <div class="boardGameCard">
+                        <div class="boardGameCardBottom"></div>
+                        <img class="boardGameCardImage"
+                            src="../images/brætspil/go.png" alt="Go" />
+                        <p class="boardGameCardTitleSmall">Go</p>
+                        <div class="boardGameCardPlayersCon">
+                            <img class="boardGameCardPlayersImg"
+                                src="../images/people.png" />
+                            <p class="boardGameCardText">2</p>
+                        </div>
+                        <p class="boardGameCardText">Game owner: Vigo Bazi</p>
+                        <div class="boardGameCardButton">Lån</div>
                     </div>
-                    <p class="boardGameCardText">Game owner: Vigo Bazi</p>
-                    <div class="boardGameCardButton">Lån</div>
-                </div>
 
-                <!-- Hive -->
-                <div class="boardGameCard">
-                    <div class="boardGameCardBottom"></div>
-                    <img class="boardGameCardImage"
-                        src="../images/brætspil/hive.png" alt="Hive" />
-                    <p class="boardGameCardTitle">Hive</p>
-                    <div class="boardGameCardPlayersCon">
-                        <img class="boardGameCardPlayersImg"
-                            src="../images/people.png" />
-                        <p class="boardGameCardText">2</p>
+                    <!-- Hive -->
+                    <div class="boardGameCard">
+                        <div class="boardGameCardBottom"></div>
+                        <img class="boardGameCardImage"
+                            src="../images/brætspil/hive.png" alt="Hive" />
+                        <p class="boardGameCardTitle">Hive</p>
+                        <div class="boardGameCardPlayersCon">
+                            <img class="boardGameCardPlayersImg"
+                                src="../images/people.png" />
+                            <p class="boardGameCardText">2</p>
+                        </div>
+                        <p class="boardGameCardText gameOwnerText">Game owner:
+                            David
+                            Olsen</p>
+                        <p class="boardGameCardText">Lånt til Mia Villumsen d.
+                            06.8.2022</p>
                     </div>
-                    <p class="boardGameCardText gameOwnerText">Game owner: David
-                        Olsen</p>
-                    <p class="boardGameCardText">Lånt til Mia Villumsen d.
-                        06.8.2022</p>
-                </div>
 
-                <!-- Stratego -->
-                <div class="boardGameCard">
-                    <div class="boardGameCardBottom"></div>
-                    <img class="boardGameCardImage"
-                        src="../images/brætspil/stratego.jpg" alt="Stratego" />
-                    <p class="boardGameCardTitleSmall">Stratego</p>
-                    <div class="boardGameCardPlayersCon">
-                        <img class="boardGameCardPlayersImg"
-                            src="../images/people.png" />
-                        <p class="boardGameCardText">2</p>
+                    <!-- Stratego -->
+                    <div class="boardGameCard">
+                        <div class="boardGameCardBottom"></div>
+                        <img class="boardGameCardImage"
+                            src="../images/brætspil/stratego.jpg" alt="Stratego"
+                            />
+                        <p class="boardGameCardTitleSmall">Stratego</p>
+                        <div class="boardGameCardPlayersCon">
+                            <img class="boardGameCardPlayersImg"
+                                src="../images/people.png" />
+                            <p class="boardGameCardText">2</p>
+                        </div>
+                        <p class="boardGameCardText">Game owner: Signe Solberg</p>
+                        <div class="boardGameCardButton">Lån</div>
                     </div>
-                    <p class="boardGameCardText">Game owner: Signe Solberg</p>
-                    <div class="boardGameCardButton">Lån</div>
-                </div>
 
-                <!-- Chess -->
-                <div class="boardGameCard">
-                    <div class="boardGameCardBottom"></div>
-                    <img class="boardGameCardImage"
-                        src="../images/brætspil/chess.jpg" alt="Chess" />
-                    <p class="boardGameCardTitleSmall">Skak</p>
-                    <div class="boardGameCardPlayersCon">
-                        <img class="boardGameCardPlayersImg"
-                            src="../images/people.png" />
-                        <p class="boardGameCardText">2</p>
+                    <!-- Chess -->
+                    <div class="boardGameCard">
+                        <div class="boardGameCardBottom"></div>
+                        <img class="boardGameCardImage"
+                            src="../images/brætspil/chess.jpg" alt="Chess" />
+                        <p class="boardGameCardTitleSmall">Skak</p>
+                        <div class="boardGameCardPlayersCon">
+                            <img class="boardGameCardPlayersImg"
+                                src="../images/people.png" />
+                            <p class="boardGameCardText">2</p>
+                        </div>
+                        <p class="boardGameCardText">Game owner: Kenneth
+                            Petersen</p>
+                        <div class="boardGameCardButton">Lån</div>
                     </div>
-                    <p class="boardGameCardText">Game owner: Kenneth Petersen</p>
-                    <div class="boardGameCardButton">Lån</div>
-                </div>
 
-                <!-- Sequence -->
-                <div class="boardGameCard">
-                    <div class="boardGameCardBottom"></div>
-                    <img class="boardGameCardImage"
-                        src="../images/brætspil/sequence.jpg" alt="Sequence" />
-                    <p class="boardGameCardTitleSmall">Sequence</p>
-                    <div class="boardGameCardPlayersCon">
-                        <img class="boardGameCardPlayersImg"
-                            src="../images/people.png" />
-                        <p class="boardGameCardText">2 - 12</p>
+                    <!-- Sequence -->
+                    <div class="boardGameCard">
+                        <div class="boardGameCardBottom"></div>
+                        <img class="boardGameCardImage"
+                            src="../images/brætspil/sequence.jpg" alt="Sequence"
+                            />
+                        <p class="boardGameCardTitleSmall">Sequence</p>
+                        <div class="boardGameCardPlayersCon">
+                            <img class="boardGameCardPlayersImg"
+                                src="../images/people.png" />
+                            <p class="boardGameCardText">2 - 12</p>
+                        </div>
+                        <p class="boardGameCardText">Game owner: Kasper Kampmann</p>
+                        <div class="boardGameCardButton">Lån</div>
                     </div>
-                    <p class="boardGameCardText">Game owner: Kasper Kampmann</p>
-                    <div class="boardGameCardButton">Lån</div>
-                </div>
 
-                <!-- Risk -->
-                <div class="boardGameCard">
-                    <div class="boardGameCardBottom"></div>
-                    <img class="boardGameCardImage"
-                        src="../images/brætspil/risk.jpeg" alt="Risk" />
-                    <p class="boardGameCardTitleSmall">Risk</p>
-                    <div class="boardGameCardPlayersCon">
-                        <img class="boardGameCardPlayersImg"
-                            src="../images/people.png" />
-                        <p class="boardGameCardText">2 - 6</p>
+                    <!-- Risk -->
+                    <div class="boardGameCard">
+                        <div class="boardGameCardBottom"></div>
+                        <img class="boardGameCardImage"
+                            src="../images/brætspil/risk.jpeg" alt="Risk" />
+                        <p class="boardGameCardTitleSmall">Risk</p>
+                        <div class="boardGameCardPlayersCon">
+                            <img class="boardGameCardPlayersImg"
+                                src="../images/people.png" />
+                            <p class="boardGameCardText">2 - 6</p>
+                        </div>
+                        <p class="boardGameCardText">Game owner: Maria Nygaard</p>
+                        <div class="boardGameCardButton">Lån</div>
                     </div>
-                    <p class="boardGameCardText">Game owner: Maria Nygaard</p>
-                    <div class="boardGameCardButton">Lån</div>
-                </div>
 
-                <!-- Chinese checkers (kinaskak) -->
-                <div class="boardGameCard">
-                    <div class="boardGameCardBottom"></div>
-                    <img class="boardGameCardImage"
-                        src="../images/brætspil/chineseCheckers.jpg"
-                        alt="Chinsese Checkers" />
-                    <p class="boardGameCardTitleSmall">Kinaskak</p>
-                    <div class="boardGameCardPlayersCon">
-                        <img class="boardGameCardPlayersImg"
-                            src="../images/people.png" />
-                        <p class="boardGameCardText">2 - 6</p>
+                    <!-- Chinese checkers (kinaskak) -->
+                    <div class="boardGameCard">
+                        <div class="boardGameCardBottom"></div>
+                        <img class="boardGameCardImage"
+                            src="../images/brætspil/chineseCheckers.jpg"
+                            alt="Chinsese Checkers" />
+                        <p class="boardGameCardTitleSmall">Kinaskak</p>
+                        <div class="boardGameCardPlayersCon">
+                            <img class="boardGameCardPlayersImg"
+                                src="../images/people.png" />
+                            <p class="boardGameCardText">2 - 6</p>
+                        </div>
+                        <p class="boardGameCardText">Game owner: Rasmus Thomsen</p>
+                        <p class="boardGameCardText">Lånt til Kasper Kampmann d.
+                            20.9.2022</p>
                     </div>
-                    <p class="boardGameCardText">Game owner: Rasmus Thomsen</p>
-                    <p class="boardGameCardText">Lånt til Kasper Kampmann d.
-                        20.9.2022</p>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>

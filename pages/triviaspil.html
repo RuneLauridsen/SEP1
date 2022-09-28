@@ -41,58 +41,88 @@
 
         <div id="mainCon">
             <h2 class="pageHeader">Triviaspil</h2>
-
+            <div class="smallDivider"></div>
+            <!-- Filter options -->
+            <div id="filterCon">
+                <div class="dropDownMenu">
+                    <label>Kategorier</label>
+                    <select name="kategorier">
+                        <option value="allespil">Alle spil</option>
+                        <option value="familiespil">Familiespil</option>
+                        <option value="strategispil">Strategispil</option>
+                        <option value="kortspil">Kortspil</option>
+                        <option value="triviaspil" selected="selected">Triviaspil</option>
+                    </select>
+                    <div class="dropDownMenu">
+                        <label>Antal spillere</label>
+                        <select name="antal_spillere">
+                            <option value="2-4">1 - 4</option>
+                            <option value="4-8">4 - 8</option>
+                            <option value="8-16">8 - 16</option>
+                            <option value="16+">16+</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <p id="kategoriBeskrivelse">Hvis man vil overleve i denne kategori
+                er viden et must. Parat viden er
+                nemelig nøglen til Trivia spil, hvor man får spørgsmål i øst og
+                vest. Kender du nogle der skal have udfordret deres viden?</p>
             <div id="boardGamesCon">
-                <!-- Trivia Pursuit -->
-                <div class="boardGameCard">
-                    <div class="boardGameCardBottom"></div>
-                    <img class="boardGameCardImage"
-                        src="../images/brætspil/trivialPursuit.jpg" alt="Trivial
-                        Pursuit" />
-                    <p class="boardGameCardTitle">Trivial Pursuit</p>
-                    <div class="boardGameCardPlayersCon">
-                        <img class="boardGameCardPlayersImg"
-                            src="../images/people.png" />
-                        <p class="boardGameCardText">2 - 6</p>
+                <div id="boardGamesCon">
+                    <!-- Trivia Pursuit -->
+                    <div class="boardGameCard">
+                        <div class="boardGameCardBottom"></div>
+                        <img class="boardGameCardImage"
+                            src="../images/brætspil/trivialPursuit.jpg"
+                            alt="Trivial
+                            Pursuit" />
+                        <p class="boardGameCardTitle">Trivial Pursuit</p>
+                        <div class="boardGameCardPlayersCon">
+                            <img class="boardGameCardPlayersImg"
+                                src="../images/people.png" />
+                            <p class="boardGameCardText">2 - 6</p>
+                        </div>
+                        <p class="boardGameCardText">Game owner: Karl Klausen</p>
+                        <div class="boardGameCardButton">Lån</div>
                     </div>
-                    <p class="boardGameCardText">Game owner: Karl Klausen</p>
-                    <div class="boardGameCardButton">Lån</div>
-                </div>
 
-                <!-- Cranium -->
-                <div class="boardGameCard">
-                    <div class="boardGameCardBottom"></div>
-                    <img class="boardGameCardImage"
-                        src="../images/brætspil/cranium.jpg" alt="Cranium" />
-                    <p class="boardGameCardTitle">Cranium</p>
-                    <div class="boardGameCardPlayersCon">
-                        <img class="boardGameCardPlayersImg"
-                            src="../images/people.png" />
-                        <p class="boardGameCardText">2 - 6</p>
+                    <!-- Cranium -->
+                    <div class="boardGameCard">
+                        <div class="boardGameCardBottom"></div>
+                        <img class="boardGameCardImage"
+                            src="../images/brætspil/cranium.jpg" alt="Cranium"
+                            />
+                        <p class="boardGameCardTitle">Cranium</p>
+                        <div class="boardGameCardPlayersCon">
+                            <img class="boardGameCardPlayersImg"
+                                src="../images/people.png" />
+                            <p class="boardGameCardText">2 - 6</p>
+                        </div>
+                        <p class="boardGameCardText gameOwnerText">Game owner:
+                            Rasmus Berg</p>
+                        <p class="boardGameCardText">Lånt til Solvej Nielsen d.
+                            24.8.2022</p>
                     </div>
-                    <p class="boardGameCardText gameOwnerText">Game owner:
-                        Rasmus Berg</p>
-                    <p class="boardGameCardText">Lånt til Solvej Nielsen d.
-                        24.8.2022</p>
-                </div>
 
-                <!-- Bezzerwizzer -->
-                <div class="boardGameCard">
-                    <div class="boardGameCardBottom"></div>
-                    <img class="boardGameCardImage"
-                        src="../images/brætspil/bezzerwizzer.jpg"
-                        alt="Bezzerwizzer" />
-                    <p class="boardGameCardTitle">Bezzerwizzer</p>
-                    <div class="boardGameCardPlayersCon">
-                        <img class="boardGameCardPlayersImg"
-                            src="../images/people.png" />
-                        <p class="boardGameCardText">2 - 16</p>
+                    <!-- Bezzerwizzer -->
+                    <div class="boardGameCard">
+                        <div class="boardGameCardBottom"></div>
+                        <img class="boardGameCardImage"
+                            src="../images/brætspil/bezzerwizzer.jpg"
+                            alt="Bezzerwizzer" />
+                        <p class="boardGameCardTitle">Bezzerwizzer</p>
+                        <div class="boardGameCardPlayersCon">
+                            <img class="boardGameCardPlayersImg"
+                                src="../images/people.png" />
+                            <p class="boardGameCardText">2 - 16</p>
+                        </div>
+                        <p class="boardGameCardText gameOwnerText">Game owner:
+                            Erik
+                            Olsen</p>
+                        <div class="boardGameCardButton">Lån</div>
                     </div>
-                    <p class="boardGameCardText gameOwnerText">Game owner: Erik
-                        Olsen</p>
-                    <div class="boardGameCardButton">Lån</div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>

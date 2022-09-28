@@ -41,69 +41,99 @@
 
         <div id="mainCon">
             <h2 class="pageHeader">Kortspil</h2>
-
+            <div class="smallDivider"></div>
+            <!-- Filter options -->
+            <div id="filterCon">
+                <div class="dropDownMenu">
+                    <label>Kategorier</label>
+                    <select name="kategorier">
+                        <option value="allespil">Alle spil</option>
+                        <option value="familiespil">Familiespil</option>
+                        <option value="strategispil">Strategispil</option>
+                        <option value="kortspil" selected="selected">Kortspil</option>
+                        <option value="triviaspil">Triviaspil</option>
+                    </select>
+                    <div class="dropDownMenu">
+                        <label>Antal spillere</label>
+                        <select name="antal_spillere">
+                            <option value="2-4">1 - 4</option>
+                            <option value="4-8">4 - 8</option>
+                            <option value="8-16">8 - 16</option>
+                            <option value="16+">16+</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <p id="kategoriBeskrivelse">Kortspil er en populær genre, både som
+                et helt standard sæt kort, men også i andre formatter som for
+                eksempelvis Uno. Man går aldrig helt galt i byen med et
+                kortspil.</p>
             <div id="boardGamesCon">
-                <!-- Uno -->
-                <div class="boardGameCard">
-                    <div class="boardGameCardBottom"></div>
-                    <img class="boardGameCardImage"
-                        src="../images/brætspil/uno.jpg" alt="Uno" />
-                    <p class="boardGameCardTitle">Uno</p>
-                    <div class="boardGameCardPlayersCon">
-                        <img class="boardGameCardPlayersImg"
-                            src="../images/people.png" />
-                        <p class="boardGameCardText">2 - 10</p>
+                <div id="boardGamesCon">
+                    <!-- Uno -->
+                    <div class="boardGameCard">
+                        <div class="boardGameCardBottom"></div>
+                        <img class="boardGameCardImage"
+                            src="../images/brætspil/uno.jpg" alt="Uno" />
+                        <p class="boardGameCardTitle">Uno</p>
+                        <div class="boardGameCardPlayersCon">
+                            <img class="boardGameCardPlayersImg"
+                                src="../images/people.png" />
+                            <p class="boardGameCardText">2 - 10</p>
+                        </div>
+                        <p class="boardGameCardText">Game owner: Louise Kelpak</p>
+                        <div class="boardGameCardButton">Lån</div>
                     </div>
-                    <p class="boardGameCardText">Game owner: Louise Kelpak</p>
-                    <div class="boardGameCardButton">Lån</div>
-                </div>
 
-                <!-- Cards Against Humanity -->
-                <div class="boardGameCard">
-                    <div class="boardGameCardBottom"></div>
-                    <img class="boardGameCardImage"
-                        src="../images/brætspil/cardsAgainstHumanity.jpg"
-                        alt="Cards Against Humanity" />
-                    <p class="boardGameCardTitleSmall">Cards Against Humanity</p>
-                    <div class="boardGameCardPlayersCon">
-                        <img class="boardGameCardPlayersImg"
-                            src="../images/people.png" />
-                        <p class="boardGameCardText">4+</p>
+                    <!-- Cards Against Humanity -->
+                    <div class="boardGameCard">
+                        <div class="boardGameCardBottom"></div>
+                        <img class="boardGameCardImage"
+                            src="../images/brætspil/cardsAgainstHumanity.jpg"
+                            alt="Cards Against Humanity" />
+                        <p class="boardGameCardTitleSmall">Cards Against
+                            Humanity</p>
+                        <div class="boardGameCardPlayersCon">
+                            <img class="boardGameCardPlayersImg"
+                                src="../images/people.png" />
+                            <p class="boardGameCardText">4+</p>
+                        </div>
+                        <p class="boardGameCardText">Game owner: Eva Ditsen</p>
+                        <div class="boardGameCardButton">Lån</div>
                     </div>
-                    <p class="boardGameCardText">Game owner: Eva Ditsen</p>
-                    <div class="boardGameCardButton">Lån</div>
-                </div>
 
-                <!-- Sequence -->
-                <div class="boardGameCard">
-                    <div class="boardGameCardBottom"></div>
-                    <img class="boardGameCardImage"
-                        src="../images/brætspil/sequence.jpg" alt="Sequence" />
-                    <p class="boardGameCardTitleSmall">Sequence</p>
-                    <div class="boardGameCardPlayersCon">
-                        <img class="boardGameCardPlayersImg"
-                            src="../images/people.png" />
-                        <p class="boardGameCardText">2 - 12</p>
+                    <!-- Sequence -->
+                    <div class="boardGameCard">
+                        <div class="boardGameCardBottom"></div>
+                        <img class="boardGameCardImage"
+                            src="../images/brætspil/sequence.jpg" alt="Sequence"
+                            />
+                        <p class="boardGameCardTitleSmall">Sequence</p>
+                        <div class="boardGameCardPlayersCon">
+                            <img class="boardGameCardPlayersImg"
+                                src="../images/people.png" />
+                            <p class="boardGameCardText">2 - 12</p>
+                        </div>
+                        <p class="boardGameCardText">Game owner: Kasper Kampmann</p>
+                        <div class="boardGameCardButton">Lån</div>
                     </div>
-                    <p class="boardGameCardText">Game owner: Kasper Kampmann</p>
-                    <div class="boardGameCardButton">Lån</div>
-                </div>
 
-                <!-- Poker -->
-                <div class="boardGameCard">
-                    <div class="boardGameCardBottom"></div>
-                    <img class="boardGameCardImage"
-                        src="../images/brætspil/poker.jpg" alt="Poker" />
-                    <p class="boardGameCardTitleSmall">Poker</p>
-                    <div class="boardGameCardPlayersCon">
-                        <img class="boardGameCardPlayersImg"
-                            src="../images/people.png" />
-                        <p class="boardGameCardText">2 - 12</p>
+                    <!-- Poker -->
+                    <div class="boardGameCard">
+                        <div class="boardGameCardBottom"></div>
+                        <img class="boardGameCardImage"
+                            src="../images/brætspil/poker.jpg" alt="Poker" />
+                        <p class="boardGameCardTitleSmall">Poker</p>
+                        <div class="boardGameCardPlayersCon">
+                            <img class="boardGameCardPlayersImg"
+                                src="../images/people.png" />
+                            <p class="boardGameCardText">2 - 12</p>
+                        </div>
+                        <p class="boardGameCardText">Game owner: Rita
+                            Frederiksen</p>
+                        <div class="boardGameCardButton">Lån</div>
                     </div>
-                    <p class="boardGameCardText">Game owner: Rita Frederiksen</p>
-                    <div class="boardGameCardButton">Lån</div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
