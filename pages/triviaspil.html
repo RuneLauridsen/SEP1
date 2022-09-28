@@ -1,26 +1,44 @@
+<!--
+  Author: Sebastian Cedbak Bak
+  Description: This is a page that contains the family board games of the website
+-->
+
 <!DOCTYPE html>
 <html lang="da">
   <head>
+    <!-- Defines charset to use -->
     <meta charset="utf-8">
 
+    <!-- Imports CSS styling -->
     <link rel="stylesheet" href="../styles.css">
+
+    <!-- Sets the title of this page -->
     <title>Triviaspil - VIA Board Game Group</title>
+
+    <!-- Sets the favicon of this page -->
     <link rel="icon" type="image/png" href="../images/icon.png">
   </head>
 
   <body>
     <div>
+
       <!-- This is the horizontal navigation bar at the top of the page -->
       <div id="horiNavBar">
+
+        <!-- Our logo and website name -->
         <img id="horiNavBarLogo" src="../images/icon.png" alt="Logo">
         <h1 id="horiNavBarTitle">VIA Board Game Group</h1>
+
+        <!-- This is our search field -->
         <div id="horiNavBarSearchCon">
-          <img id="horiNavBarSearchIcon" src="../images/search.png" alt="Search Icon">
+          <img id="horiNavBarSearchIcon" src="../images/search.png" alt="Search
+            Icon">
         </div>
       </div>
 
       <!-- This is the vertical navigation bar at the left side of the page -->
       <div id="vertNavBar">
+        <!-- This unordered list contains links to all the different pages of our website -->
         <ul id="vertNavBarList">
           <li class="vertNavBarHeader"><a href="index.html">Forside</a></li>
           <li class="vertNavBarHeader">
@@ -37,11 +55,17 @@
         </ul>
       </div>
 
+      <!-- Main content -->
       <div id="mainCon">
+
+        <!-- The title of the page -->
         <h2 class="pageHeader">Triviaspil</h2>
         <div class="smallDivider"></div>
+
         <!-- Filter options -->
         <div id="filterCon">
+
+          <!-- Drop down menu of game types -->
           <div class="dropDownMenu">
             <label>Kategorier</label>
             <select name="kategorier">
@@ -51,30 +75,42 @@
               <option value="kortspil">Kortspil</option>
               <option value="triviaspil" selected="selected">Triviaspil</option>
             </select>
-            <div class="dropDownMenu">
-              <label>Antal spillere</label>
-              <select name="antal_spillere">
-                <option value="2-4">1 - 4</option>
-                <option value="4-8">4 - 8</option>
-                <option value="8-16">8 - 16</option>
-                <option value="16+">16+</option>
-              </select>
-            </div>
+          </div>
+
+          <!-- Drop down menu that selects number of players, for a given game -->
+          <div class="dropDownMenu">
+            <label>Antal spillere</label>
+            <select name="antal_spillere">
+              <option value="2-4">1 - 4</option>
+              <option value="4-8">4 - 8</option>
+              <option value="8-16">8 - 16</option>
+              <option value="16+">16+</option>
+            </select>
           </div>
         </div>
+
+        <!-- Category description -->
         <p id="kategoriBeskrivelse">
           Hvis man vil overleve i denne kategori er viden et must. Parat viden
           er nemelig nøglen til Trivia spil, hvor man får spørgsmål i øst og
           vest. Kender du nogle der skal have udfordret deres viden?
         </p>
+
+        <!-- The board games 
+        This div contains all the game "cards". Each card contains an image,
+        game name, number of players, game owner, and possible lent to and lent date.
+        -->
         <div id="boardGamesCon">
+
           <!-- Trivia Pursuit -->
           <div class="boardGameCard">
             <div class="boardGameCardBottom"></div>
-            <img class="boardGameCardImage" src="../images/brætspil/trivialPursuit.jpg" alt="Trivial Pursuit">
+            <img class="boardGameCardImage"
+              src="../images/brætspil/trivialPursuit.jpg" alt="Trivial Pursuit">
             <p class="boardGameCardTitle">Trivial Pursuit</p>
             <div class="boardGameCardPlayersCon">
-              <img class="boardGameCardPlayersImg" src="../images/people.png" alt="People icon">
+              <img class="boardGameCardPlayersImg" src="../images/people.png"
+                alt="People icon">
               <p class="boardGameCardText">2 - 6</p>
             </div>
             <p class="boardGameCardText">Game owner: Karl Klausen</p>
@@ -84,10 +120,12 @@
           <!-- Cranium -->
           <div class="boardGameCard">
             <div class="boardGameCardBottom"></div>
-            <img class="boardGameCardImage" src="../images/brætspil/cranium.jpg" alt="Cranium">
+            <img class="boardGameCardImage" src="../images/brætspil/cranium.jpg"
+              alt="Cranium">
             <p class="boardGameCardTitle">Cranium</p>
             <div class="boardGameCardPlayersCon">
-              <img class="boardGameCardPlayersImg" src="../images/people.png" alt="People icon">
+              <img class="boardGameCardPlayersImg" src="../images/people.png"
+                alt="People icon">
               <p class="boardGameCardText">2 - 6</p>
             </div>
             <p class="boardGameCardText gameOwnerText">Game owner: Rasmus Berg</p>
@@ -97,16 +135,21 @@
           <!-- Bezzerwizzer -->
           <div class="boardGameCard">
             <div class="boardGameCardBottom"></div>
-            <img class="boardGameCardImage" src="../images/brætspil/bezzerwizzer.jpg" alt="Bezzerwizzer">
+            <img class="boardGameCardImage"
+              src="../images/brætspil/bezzerwizzer.jpg" alt="Bezzerwizzer">
             <p class="boardGameCardTitle">Bezzerwizzer</p>
             <div class="boardGameCardPlayersCon">
-              <img class="boardGameCardPlayersImg" src="../images/people.png" alt="People icon">
+              <img class="boardGameCardPlayersImg" src="../images/people.png"
+                alt="People icon">
               <p class="boardGameCardText">2 - 16</p>
             </div>
             <p class="boardGameCardText gameOwnerText">Game owner: Erik Olsen</p>
             <div class="boardGameCardButton">Lån</div>
           </div>
         </div>
+
+        <!-- Some extra space in the bottom of the page -->
+        <div class="bottomSpace"></div>
       </div>
     </div>
   </body>

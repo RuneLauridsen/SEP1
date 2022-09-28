@@ -1,20 +1,35 @@
-<!DOCTYPE html>
+<!--
+  Author: Sebastian Cedbak Bak
+  Description: This is a page that contains all the board games of the website
+-->
 
+<!DOCTYPE html>
 <html lang="da">
   <head>
+    <!-- Defines charset to use -->
     <meta charset="utf-8">
 
+    <!-- Imports CSS styling -->
     <link rel="stylesheet" href="../styles.css">
+
+    <!-- Sets the title of this page -->
     <title>Brætspil - VIA Board Game Group</title>
+
+    <!-- Sets the favicon of this page -->
     <link rel="icon" type="image/png" href="../images/icon.png">
   </head>
 
   <body>
     <div>
+
       <!-- This is the horizontal navigation bar at the top of the page -->
       <div id="horiNavBar">
+
+        <!-- Our logo and website name -->
         <img id="horiNavBarLogo" src="../images/icon.png" alt="Logo">
         <h1 id="horiNavBarTitle">VIA Board Game Group</h1>
+
+        <!-- This is our search field -->
         <div id="horiNavBarSearchCon">
           <img
             id="horiNavBarSearchIcon"
@@ -26,6 +41,7 @@
 
       <!-- This is the vertical navigation bar at the left side of the page -->
       <div id="vertNavBar">
+        <!-- This unordered list contains links to all the different pages of our website -->
         <ul id="vertNavBarList">
           <li class="vertNavBarHeader"><a href="index.html">Forside</a></li>
           <li class="vertNavBarHeader">
@@ -41,40 +57,55 @@
           <li class="vertNavBarHeader"><a href="kontakt.html">Kontakt</a></li>
         </ul>
       </div>
+
       <!-- Main content -->
       <div id="mainCon">
+
+        <!-- The title of the page -->
         <h2 class="pageHeader">Brætspil</h2>
         <div class="smallDivider"></div>
+
         <!-- Filter options -->
         <div id="filterCon">
+
+          <!-- Drop down menu of game types -->
           <div class="dropDownMenu">
             <label>Kategorier</label>
             <select name="kategorier">
-              <option value="allespil">Alle spil</option>
+              <option value="allespil" selected="selected">Alle spil</option>
               <option value="familiespil">Familiespil</option>
               <option value="strategispil">Strategispil</option>
               <option value="kortspil">Kortspil</option>
               <option value="triviaspil">Triviaspil</option>
             </select>
-            <div class="dropDownMenu">
-              <label>Antal spillere</label>
-              <select name="antal_spillere">
-                <option value="2-4">1 - 4</option>
-                <option value="4-8">4 - 8</option>
-                <option value="8-16">8 - 16</option>
-                <option value="16+">16+</option>
-              </select>
-            </div>
+          </div>
+
+          <!-- Drop down menu that selects number of players, for a given game -->
+          <div class="dropDownMenu">
+            <label>Antal spillere</label>
+            <select name="antal_spillere">
+              <option value="2-4">1 - 4</option>
+              <option value="4-8">4 - 8</option>
+              <option value="8-16">8 - 16</option>
+              <option value="16+">16+</option>
+            </select>
           </div>
         </div>
+
+        <!-- Category description -->
         <p id="kategoriBeskrivelse">
           Brætspil har i årtusinder blevet brugt til at samle folk, og
           fortsætter endnu på høj plan. Her hos VIA Board Game Group tilbyder vi
           flere forskellige brætspils typer. Herunder ser du alle de brætspil vi
           tilbyder.
         </p>
-        <!-- The board games -->
+
+        <!-- The board games 
+        This div contains all the game "cards". Each card contains an image,
+        game name, number of players, game owner, and possible lent to and lent date.
+        -->
         <div id="boardGamesCon">
+
           <!-- New Ludo -->
           <div class="boardGameCard">
             <div class="boardGameCardBottom"></div>
@@ -590,6 +621,8 @@
             <div class="boardGameCardButton">Lån</div>
           </div>
         </div>
+
+        <!-- Some extra space in the bottom of the page -->
         <div class="bottomSpace"></div>
       </div>
     </div>

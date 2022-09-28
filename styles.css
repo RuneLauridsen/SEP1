@@ -1,3 +1,7 @@
+/* Styling for the board game pages [START], Author: Sebastian Cedbak Bak */
+/**/
+/**/
+
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +36,7 @@ a:hover {
 
 #horiNavBarTitle {
   font-size: 1em;
-  line-height: 10vh;  /* Same height as orange area of horiNavBar */
+  line-height: 10vh; /* Same height as orange area of horiNavBar */
   margin-left: 20px;
   float: left;
   font-weight: 500;
@@ -168,7 +172,7 @@ a:hover {
   align-self: center;
   margin: auto;
   text-align: center;
-  font-size: 1em; 
+  font-size: 1em;
   padding: 0.3vw;
 }
 
@@ -214,6 +218,10 @@ a:hover {
   background-color: #a7dc6b;
   cursor: pointer;
 }
+
+/**/
+/**/
+/* Styling for the board game pages [END] */
 
 #front_page_container {
   height: 90vh;
