@@ -36,7 +36,8 @@ a:hover {
 
 #horiNavBarTitle {
   font-size: 1em;
-  line-height: 10vh; /* Same height as orange area of horiNavBar */
+  line-height: 10vh;
+  /* Same height as orange area of horiNavBar */
   margin-left: 20px;
   float: left;
   font-weight: 500;
@@ -139,13 +140,12 @@ a:hover {
   padding: 1vw;
   float: left;
   margin: 1vw;
-  font-size: 1.3vw; /* Scale font-size with viewport, since boardGameCards themselves are scaled by viewport */
-  background: linear-gradient(
-    166deg,
-    rgba(240, 204, 148, 1) 0%,
-    rgba(249, 180, 64, 1) 75%,
-    rgba(255, 162, 0, 1) 100%
-  );
+  font-size: 1.3vw;
+  /* Scale font-size with viewport, since boardGameCards themselves are scaled by viewport */
+  background: linear-gradient(166deg,
+      rgba(240, 204, 148, 1) 0%,
+      rgba(249, 180, 64, 1) 75%,
+      rgba(255, 162, 0, 1) 100%);
 }
 
 .bottomSpace {
@@ -223,6 +223,9 @@ a:hover {
 /**/
 /* Styling for the board game pages [END] */
 
+
+/* Styling for front page (index.html) begins here */
+
 #front_page_container {
   height: 90vh;
   overflow-y: scroll;
@@ -235,7 +238,7 @@ a:hover {
   margin-right: 100px;
   overflow: auto;
   /* Avoid horizontal scrollbar when image+margin does fit within its parent (#front_page_container) */
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 .front_page_section img {
@@ -252,6 +255,10 @@ a:hover {
   margin-right: 100px;
   float: left;
 }
+
+/* Styling for front page (index.html) ends here */
+
+/* Styling for event page (event.html) starts here */
 
 .center {
   margin-left: auto;
@@ -294,3 +301,5 @@ tr :nth-child(even) {
 #facebook {
   margin-left: 500px;
 }
+
+/* Styling for event page (event.html) ends here */
