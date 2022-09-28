@@ -226,6 +226,8 @@ a:hover {
   margin-top: 30px;
   margin-right: 100px;
   overflow: auto;
+  /* Avoid horizontal scrollbar when image+margin does fit within its parent (#front_page_container) */
+  overflow-x: hidden; 
 }
 
 .front_page_section img {
